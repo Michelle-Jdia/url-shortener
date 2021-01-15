@@ -8,6 +8,14 @@
 }
 
 .header {
+    margin: 0 auto;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-self: start;
     max-width: 100%;
 }
 
@@ -18,8 +26,8 @@
 }
 
 .header__nav-bar {
-    max-width: 90%;
-    margin: 3.8% auto 0;
+    margin: 55px 165px 0;
+    max-height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,37 +35,7 @@
 
 .header__nav-bar_container {
     display: flex;
-    align-items: flex-end;
-}
-
-.header__buttons {
-    display: flex;
-    align-self: flex-end;
-}
-
-.header__button {
-    margin-left: 37px;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.7;
-    border: 0;
-    background-color: #ffffff;
-    color: #9E9AA8;
-}
-
-.header__button:first-child {
-    margin-left: 0;
-}
-
-.button_bg_color {
-    color: #ffffff;
-    background-color: #2BD0D0;
-    font-size: 15px;
-    padding: 9px 23px;
-    border-radius: 28px;
-    box-sizing: border-box;
-    text-decoration: none;
-    line-height: 1.75;
+    align-items: center;
 }
 
 .header__link {
@@ -72,8 +50,81 @@
 .header__link:last-child {
     margin: 0;
 }
+
 .header__illustration {
+    position: absolute;
+    right: -123px;
+    top: 166px;
     width: 733px;
     height: 482px;
     background-image: url("/images/illustration-working.svg");
+    z-index: -1;
 }
+
+.header__title {
+    color: #34313d;
+    font-size: 80px;
+    line-height: 1.125;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 165px;
+    margin-top: 139px;
+    margin-bottom: 5px;
+}
+
+.header__subtitle {
+    color: #9e9aa8;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.63;
+    max-width: 550px;
+    margin: 0;
+    margin-left: 165px;
+}
+
+/* buttons */
+.header__buttons {
+    display: flex;
+    align-self: flex-end;
+}
+
+.header__nav-bar_button {
+    margin-left: 37px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.47;
+    border: none;
+    background-color: #ffffff;
+    color: #9E9AA8;
+    text-decoration: none;
+}
+
+.button_bg_color {
+    color: #ffffff;
+    background-color: #2BD0D0;
+    border-radius: 28px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    padding: 9px 23px;
+}
+
+.header__nav-bar_button:first-child {
+    margin-left: 0;
+}
+
+.header__button {
+    max-width: 197px;
+    height: 56px;
+    margin: 38px 0 0 165px;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5s;
+}
+
+.header__button:focus {
+    outline: none;
+}
+/* end buttons */
