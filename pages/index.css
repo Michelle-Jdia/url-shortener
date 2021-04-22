@@ -45,10 +45,14 @@
   font-size: 15px;
   line-height: 1.65;
   font-weight: bold;
+  transition: opacity ease-in-out 0.4s;
 }
 
 .header__link:last-child {
   margin: 0;
+}
+.header__link:hover {
+    opacity: .8;
 }
 
 .header__illustration {
@@ -87,6 +91,7 @@
 .header__buttons {
   display: flex;
   align-self: flex-end;
+
 }
 
 .header__nav-bar_button {
@@ -100,6 +105,11 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  transition: opacity ease-in-out 0.4s;
+
+}
+.header__nav-bar_button:hover {
+    opacity: .8;
 }
 
 .button_bg_color {
@@ -112,9 +122,13 @@
   padding: 9px 23px;
   cursor: pointer;
   outline: none;
+  transition: opacity ease-in-out 0.4s;
 }
 .button_bg_color:focus {
   background-color: #76dada;
+}
+.button_bg_color:hover {
+  opacity: .8;
 }
 
 .header__nav-bar_button:first-child {
